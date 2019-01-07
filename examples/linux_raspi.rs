@@ -1,16 +1,16 @@
-//! Example to communicate from Raspberry PI with ADS1256 ADC board 
-//!
+//! Example to communicate with ADS1256 ADC board from Raspberry PI
 //! The High-Precision AD/DA board was used for testing.
 //! [AD/DA board ]https://www.waveshare.com/wiki/High-Precision_AD/DA_Board
 //!
-extern crate ads1256_rs;
+
+extern crate ads1256;
 extern crate linux_embedded_hal as linux_hal;
 
 use linux_hal::spidev::{self, SpidevOptions};
 use linux_hal::sysfs_gpio::Direction;
 use linux_hal::{Delay, Pin, Spidev};
 
-use ads1256_rs::{Channel, Config, Register, SamplingRate, ADS1256, PGA};
+use ads1256::{Channel, Config, Register, SamplingRate, ADS1256, PGA};
 
 use std::thread;
 use std::time::Duration;

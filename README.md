@@ -19,7 +19,8 @@ Details and datasheet: http://www.ti.com/product/ADS1256
 
 ## Examples
 
-You can find example of communication from Raspberry PI with  ADS1256 board under ./examples directory
+You can find example of communication from Raspberry PI with  ADS1256 board under 
+[`examples/linux_raspi.rs`](examples/linux_raspi.rs)
 
 To build the Raspberry PI example run :
 cargo build --examples
